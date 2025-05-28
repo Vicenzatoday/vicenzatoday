@@ -4,11 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ultime Notizie da VicenzaToday</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 1rem;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .feed-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 <body>
   <h1>Ultime Notizie da VicenzaToday</h1>
-  <!-- start feedwind code -->
-  <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Caricamento..." data-fw-param="173215/"></script>
-  <!-- end feedwind code -->
+  <div class="feed-container">
+    <!-- iframe ora con altezza maggiore -->
+    <iframe 
+      src="https://feed.mikle.com/widget/v2/173215/?preloader-text=Loading&" 
+      height="600" 
+      width="100%" 
+      frameborder="0" 
+      scrolling="no">
+    </iframe>
+  </div>
 </body>
 </html>
